@@ -1,7 +1,6 @@
 import google.generativeai as genai
 from typing import Dict, List
 import logging
-import json
 from dataclasses import dataclass
 from datetime import datetime
 
