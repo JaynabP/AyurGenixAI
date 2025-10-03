@@ -44,12 +44,12 @@ git push origin main
 
 **Build Settings**:
 - **Runtime**: `Python 3`
-- **Build Command**: `pip install -r requirements.txt`
+- **Build Command**: `pip install --upgrade pip && pip install --no-cache-dir -r requirements.txt`
 - **Start Command**: `uvicorn main:app --host 0.0.0.0 --port $PORT`
 
 **Instance Type**:
-- **Free Tier**: Select "Free" for testing
-- **Paid Tier**: Select "Starter" or higher for production
+- **Free Tier**: Select "Free" for testing  
+- **Paid Tier**: Select "Starter" or higher for production (recommended)
 
 ### **Step 4: Set Environment Variables**
 
@@ -57,8 +57,8 @@ In the Render dashboard, go to "Environment" tab and add:
 
 | Key | Value |
 |-----|-------|
-| `GEMINI_API_KEY` | `your_actual_gemini_api_key_here` |
-| `PYTHON_VERSION` | `3.11.0` |
+| `GEMINI_API_KEY` | `AIzaSyC6ZPzOTR_yDMctE8R1q2pOHYAXigvVWAo` |
+| `PYTHON_VERSION` | `3.10.14` |
 
 ### **Step 5: Deploy**
 
